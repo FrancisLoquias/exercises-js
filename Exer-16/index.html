@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exer 16</title>
+</head>
+    <body>
+        <label>Radius:
+            <input type="range"
+                id="radius"
+                min= "5"
+                max= "200">
+        </label>
+
+        <p id="radiusValue"></p>
+
+        <br>
+        <label>Height:
+            <input type="range"
+                id="height"
+                min= "5"
+                max= "400">
+        </label>
+
+        <p id="heightValue"></p>
+
+        <br>
+        <label>Color fill:
+            <input type="color"
+                id="color">
+        </label>
+
+        <br>
+        <br>
+        <label>Color border:
+            <input type="color"
+                id="border">
+        </label>
+
+        <br>
+        <div onmousemove="draw(event)"></div>
+        <canvas id="canvas" width = "1000" height= "1000"></canvas>
+    </body>
+  <script src="main.js"></script>
+</html>
